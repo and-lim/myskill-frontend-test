@@ -23,14 +23,16 @@ function App() {
   const [records, setRecords] = useState([
     {
       id: 1,
-      name: "femi",
-      phone: "0918819919",
+      name: "Abcdefgh",
+      phone: "12345678",
       title:"Title",
-      email: "emmafemi0@gmail",
+      email: "abc0@gmail.com",
       position :"Front End Developer",
       profilePic:
         "img/profile.png",
       bgPic:"img/bg.png",
+      startDate : "Januari 2023",
+      endDate :  "December 2023",
       desc: "This is Description",
     },
   ]);
@@ -171,11 +173,9 @@ function App() {
 
   return (
     <div className="mt-12 mx-auto max-w-screen-xl">
-      <h1 className=" text-gray-500 font-semibold text-3xl p-2 mb-4">
-        React Crud Application
-      </h1>
       <div className="flex lg:ml-7 gap-2">
         <button type="button" class="text-gray-900 bg-white border border-blue-700 text-blue-700 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">+ Add Portfolio </button>
+        <button type="button" class="text-gray-500 bg-white border bg-gray-50 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">Simpan Peruabahan</button>
       </div>
       <div className="flex lg:flex-row">
         {/* <ProfileList

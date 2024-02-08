@@ -20,7 +20,7 @@ function Profilecard({ records, onDelete, onEdit }) {
                         <div className="bg-white shadow rounded p-5">
                             <h2 className="text-xl font-bold">{record.position}</h2>
                             <h3 className='text-gray-500'>My Skill</h3>
-                            <span className="text-gray-500"></span>
+                            <span className="text-gray-500"> {record.startDate} - {record.endDate}  </span>
                             <p className='text-black'>{record.desc}</p>
                         </div>
 
