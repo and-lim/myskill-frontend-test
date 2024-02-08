@@ -15,6 +15,7 @@ function App() {
     endDate: "",
     email: "",
     profilePic: "",
+    bgPic: "",
     desc: "",
   });
   const [editRecords, setEditRecords] = useState(0);
@@ -28,8 +29,9 @@ function App() {
       email: "emmafemi0@gmail",
       position :"Front End Developer",
       profilePic:
-        "https://pbs.twimg.com/profile_images/1609154394229964800/gHa_TDTd_400x400.jpg",
-      desc: "Javascript is good",
+        "img/profile.png",
+      bgPic:"img/bg.png",
+      desc: "This is Description",
     },
   ]);
 
@@ -57,6 +59,7 @@ function App() {
               endDate: value.endDate,
               email: value.email,
               profilePic: value.profilePic,
+              bgPic: value.bgPic,
               desc: value.desc,
             })
           : {
@@ -69,6 +72,8 @@ function App() {
               company : t.company,
               startDate: t.startDate,
               endDate: t.endDate,
+              profilePic: t.profilePic,
+              bgPic: t.bgPic,
               phone: t.phone,
               desc: t.desc,
             }
@@ -86,6 +91,7 @@ function App() {
         startDate: "",
         endDate: "",
         profilePic: "",
+        bgPic: "",
         phone: "",
         desc: "",
       });
@@ -103,6 +109,7 @@ function App() {
       value.endDate !== "",
       value.email !== "",
       value.profilePic !== "",
+      value.bgPic !== "",
       value.desc !== "")
     ) {
       // const id = Math.floor(Math.random() * 10000) + 1;
@@ -119,6 +126,7 @@ function App() {
         phone: value.phone,
         email: value.email,
         profilePic: value.profilePic,
+        bgPic: value.bgPic,
         desc: value.desc,
       };
 
@@ -130,6 +138,7 @@ function App() {
         title:"",
         position :"",
         profilePic: "",
+        bgPic: "",
         phone: "",
         desc: "",
       });
@@ -153,6 +162,7 @@ function App() {
       endDate: editRecord.endDate,
       phone: editRecord.phone,
       profilePic: editRecord.profilePic,
+      bgPic: editRecord.bgPic,
       desc: editRecord.desc,
     });
     setEditRecords(id);
